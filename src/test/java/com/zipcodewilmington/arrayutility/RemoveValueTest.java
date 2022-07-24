@@ -1,28 +1,28 @@
-package com.zipcodewilmington.arrayutility;
-
-//import com.zipcodewilmington.UnitTestingUtils;
-import org.junit.Test;
-
-/**
- * Created by leon on 3/1/18.
- * The purpose of this class is to thoroughly test the method removeValue()
- */
-public class RemoveValueTest {
-    @Test
-    public void integerTest() {
-        // Given
-        Integer valueToRemove = 7;
-        Integer[] expected = {11, 2, 8, 4, 5, 0, 9, 8};
-        Integer[] inputArray = {11, 2, valueToRemove, 8, 4, 5, valueToRemove, 0, 9, 8, valueToRemove};
-        ArrayUtility<Integer> arrayUtility = new ArrayUtility<Integer>(inputArray);
-
-
-        // When
-        Integer[] actual = arrayUtility.removeValue(valueToRemove);
-
-        // Then
-        UnitTestingUtils.assertArrayEquality(expected, actual);
-    }
+//package com.zipcodewilmington.arrayutility;
+//
+////import com.zipcodewilmington.UnitTestingUtils;
+//import org.junit.Test;
+//
+///**
+// * Created by leon on 3/1/18.
+// * The purpose of this class is to thoroughly test the method removeValue()
+// */
+//public class RemoveValueTest {
+//    @Test
+//    public void integerTest() {
+//        // Given
+//        Integer valueToRemove = 7;
+//        Integer[] expected = {11, 2, 8, 4, 5, 0, 9, 8};
+//        Integer[] inputArray = {11, 2, valueToRemove, 8, 4, 5, valueToRemove, 0, 9, 8, valueToRemove};
+//        ArrayUtility<Integer> arrayUtility = new ArrayUtility<Integer>(inputArray);
+//
+//
+//        // When
+//        Integer[] actual = arrayUtility.removeValue(valueToRemove);
+//
+//        // Then
+//        UnitTestingUtils.assertArrayEquality(expected, actual);
+//    }
 //
 //    @Test
 //    public void longTest() {
@@ -75,4 +75,4 @@ public class RemoveValueTest {
 //        UnitTestingUtils.assertArrayEquality(expected, actual);
 //    }
 //
-}
+//}
